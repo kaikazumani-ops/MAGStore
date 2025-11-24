@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produk Makanan</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #f1c40f;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: #000;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 900px;
+            margin: 30px auto;
+        }
+
+        .card {
+            background-color: #111;
+            border-left: 5px solid #f1c40f;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeUp 0.6s forwards;
+        }
+
+        .card:nth-child(2) { animation-delay: 0.15s; }
+        .card:nth-child(3) { animation-delay: 0.3s; }
+        .card:nth-child(4) { animation-delay: 0.45s; }
+        .card:nth-child(5) { animation-delay: 0.6s; }
+
+        @keyframes fadeUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .card img {
+            width: 110px;
+            height: 110px;
+            object-fit: cover;
+            border-radius: 12px;
+            border: 2px solid #f1c40f;
+        }
+
+        .text-box h3 {
+            margin: 0;
+            font-size: 20px;
+            color: #f1c40f;
+        }
+
+        .text-box p {
+            margin-top: 5px;
+            font-size: 14px;
+            color: #eaeaea;
+        }
+
+        .btn-detail {
+            display: inline-block;
+            margin: 10px auto 0;
+            padding: 8px 14px;
+            background-color: #f1c40f;
+            color: #000;
+            border-radius: 8px;
+            font-weight: bold;
+            text-decoration: none;
+            width: fit-content;
+        }
+
+        .btn-detail:hover {
+            background-color: #ffda4d;
+        }
+    </style>
+</head>
+
+<body>
+
+    <a href="index.html" class="btn-detail">← Kembali</a>
+
+    <div class="header">PRODUK MAKANAN</div>
+
+    <div class="container">
+
+        <!-- BASRENG -->
+        <div class="card">
+            <img src="BASRENG.jpeg">
+            <div class="text-box">
+                <h3>Basreng Pedas Daun Jeruk</h3>
+                <p>Rp 15.000 / 200g<br>
+                Rp 30.000 / 500g<br>
+                Rp 50.000 / 1kg<br><br>
+                Pedes nampol, bikin nagih, cocok buat cemilan atau teman makan nasi.</p>
+            </div>
+        </div>
+
+        <!-- SEBLAK -->
+        <div class="card">
+            <img src="Seblak.jpeg">
+            <div class="text-box">
+                <h3>Seblak Kering</h3>
+                <p>Rp 15.000 / 200g<br>
+                Rp 30.000 / 500g<br>
+                Rp 50.000 / 1kg<br><br>
+                Pedes nampol, bikin nagih, enak buat cemilan kapan aja.</p>
+            </div>
+        </div>
+
+        <!-- SOSIS SOLO -->
+        <div class="card">
+            <img src="Sosis.jpeg">
+            <div class="text-box">
+                <h3>Sosis Solo</h3>
+                <p>Rp 2.000 / pcs<br><br>
+                Enak buat teman kopi, teh, atau sambil push rank sampai lupa makan.</p>
+            </div>
+        </div>
+
+        <!-- PANADA -->
+        <div class="card">
+            <img src="Panada.jpeg">
+            <div class="text-box">
+                <h3>Panada</h3>
+                <p>Rp 2.000 / pcs<br><br>
+                Cocok buat cemilan santai, enak disantap kapan aja.</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
