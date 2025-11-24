@@ -1,141 +1,128 @@
-<!DOCTYPE html><html lang="id">
+<!DOCTYPE html>
+<html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>OpanGlobal</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0f0f0f;
-      color: #e5e5e5;
-    }
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 18px 22px;
-      background: #000;
-      border-bottom: 1px solid #222;
-    }
-    header h1 span { color: #f7b318; }.unit-card {
-  display: flex;
-  align-items: center;
-  background: #121212;
-  padding: 20px;
-  margin: 20px;
-  border-radius: 22px;
-  border: 1px solid #222;
-  gap: 18px;
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jasa Teman</title>
 
-.unit-logo {
-  width: 110px;
-  height: 110px;
-  object-fit: cover;
-  border-radius: 18px;
-  background: #222;
-}
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
 
-.unit-info h3 {
-  margin: 0;
-  font-size: 22px;
-}
+        .header {
+            background-color: #f1c40f;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: #000;
+        }
 
-.unit-info p {
-  margin-top: 6px;
-  line-height: 1.4;
-  color: #cfcfcf;
-}
+        .container {
+            width: 90%;
+            max-width: 900px;
+            margin: 30px auto;
+        }
 
-.btn {
-  display: inline-block;
-  margin-top: 12px;
-  padding: 10px 15px;
-  background: #f7b318;
-  color: #000;
-  font-weight: bold;
-  border-radius: 8px;
-  text-decoration: none;
-}
+        .card {
+            background-color: #111;
+            border-left: 5px solid #f1c40f;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeUp 0.6s forwards;
+        }
 
-.detail-section {
-  padding: 20px;
-  margin-top: 15px;
-}
-.detail-section h2 {
-  color: #f7b318;
-}
+        .card:nth-child(2) { animation-delay: 0.15s; }
+        .card:nth-child(3) { animation-delay: 0.3s; }
+        .card:nth-child(4) { animation-delay: 0.45s; }
 
-  </style>
+        @keyframes fadeUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .card img {
+            width: 110px;
+            height: 110px;
+            object-fit: cover;
+            border-radius: 12px;
+            border: 2px solid #f1c40f;
+        }
+
+        .text-box h3 {
+            margin: 0;
+            font-size: 20px;
+            color: #f1c40f;
+        }
+
+        .text-box p {
+            margin-top: 5px;
+            font-size: 14px;
+            color: #eaeaea;
+        }
+    </style>
 </head>
-<body><header>
-  <h1>MAGStore <span>Global</span></h1>
-</header><!-- UNIT USAHA 1 --><div class="unit-card">
-  <img src="Poster Joki MLBB.jpeg" class="unit-logo" alt="Logo Joki" />
-  <div class="unit-info">
-    <h3>Open Jasa Joki Game</h3>
-    <p>Layanan jasa joki game profesional untuk berbagai game populer.</p>
-    <a href="#detail-joki" class="btn">Pelajari Lebih Lanjut →</a>
-  </div>
-</div><!-- UNIT USAHA 2 --><div class="unit-card">
-  <img src="download.jpeg" class="unit-logo" alt="Logo Jasa Teman" />
-  <div class="unit-info">
-    <h3>Jasa Teman</h3>
-    <p>Layanan pendamping dan teman ngobrol untuk berbagai kebutuhan sosial.</p>
-    <a href="#detail-teman" class="btn">Pelajari Lebih Lanjut →</a>
-  </div>
-</div><!-- UNIT USAHA 3 --><div class="unit-card">
-  <img src="Food poster design - Iraida Bearlala.jpeg" class="unit-logo" alt="Logo Produk Makanan" />
-  <div class="unit-info">
-    <h3>Produk Makanan</h3>
-    <p>Produk makanan rumahan dan olahan segar.</p>
-    <a href="#detail-makanan" class="btn">Pelajari Lebih Lanjut →</a>
-  </div>
-</div><!-- UNIT USAHA 4 --><div class="unit-card">
-  <img src="469c2ffe-89c6-4b5a-aee7-45010269caa0.jpeg" class="unit-logo" alt="Logo Produk Barang" />
-  <div class="unit-info">
-    <h3>Produk Barang</h3>
-    <p>Berbagai barang kebutuhan gamers dan produk unggulan.</p>
-    <a href="#detail-barang" class="btn">Pelajari Lebih Lanjut →</a>
-  </div>
-</div><!-- DETAIL SECTIONS --><div class="detail-section" id="detail-joki">
-  <h2>Detail – Opan Jasa Joki Game</h2>
-  <p>MAGSTORE adalah tempat joki gamr yang aman, murah dan terpercaya. Proses tergantung berapa banyak pelanggan, jika sedang banyak maka akan sedikit lama, jika sedang sedikit maka akan cepat. Open 24 jam. Payment terlengkap. Jika ada kendala silahkan klik logo CS pada kanan bawah di website ini.</p>
-</div><div class="detail-section" id="detail-teman">
-  <h2>Detail – Jasa Teman</h2>
-  <p>Apa saja topik yang bisa saya curhatkan melalui layanan ini?
-Anda bebas mencurahkan isi hati terkait berbagai hal, mulai dari masalah hubungan pribadi, tekanan pekerjaan, konflik keluarga, keresahan, rasa cemas, kesepian, ataupun situasi sulit lainnya. Tidak ada topik yang dianggap sepele—layanan ini hadir untuk mendengarkan dan membantu Anda tanpa menghakimi.</p>
-</div><div class="detail-section" id="detail-makanan">
-  <h2>Detail – Produk Makanan</h2>
-  <p>MAGStore jual aneka cemilan kiloan yang cocok untuk semua selera. Dari yang gurih, pedas, manis, sampai yang super renyah—semuanya tersedia untuk menemanimu saar bermain game dan semuanya lengkap.</p>
-</div><div class="detail-section" id="detail-barang">
-  <h2>Detail – Produk Barang</h2>
-  <p>Jual Beli PC Desktop Gaming rakitan dan workstation DELL Precision, Asus ROG, Alienware, Lenovo Thinkpad, Acer Predator, MSI, Apple untuk 3D, CAD, LUMION, PS1 sampai PS5, Nintendo Swith, dll, dengan review harga termurah dan spesifikasi terlengkap di Jakarta, Jogja , Bandung, Surabaya, Semarang, Makasar, Indonesia.</p>
-</div>
 
-<footer style="background:#111;padding:20px;color:#ccc;">
-  <h3>Tentang MAGStore Global</h3>
-  <p>MAGStore adalah komunitas dan layanan yang bergerak di berbagai bidang, mulai dari jasa joki, komunitas gaming, hingga produk makanan & barang.</p>
+<body>
 
-  <p>📍 Lokasi: Lemah Duhur, Kec. Caringin, Kabupaten Bogor, Jawa Barat 16730</p>
-  <p>📞 +62 856 9790 6862</p>
-  <p>✉️ info@magstore.com</p>
+    <div class="header">JASA TEMAN - OPAN</div>
 
-  <h3>Menu Utama</h3>
-  <p>• Beranda</p>
-  <p>• Unit Bisnis</p>
-  <p>• Komunitas</p>
-  <p>• Berita</p>
+    <div class="container">
 
-  <h3>Unit Bisnis</h3>
-  <p>Jelajahi berbagai unit bisnis kami yang melayani berbagai kebutuhan industri.</p>
-  <p><a href="#" style="color:#f7b318;text-decoration:none;">Lihat Semua Unit Bisnis →</a></p>
+        <!-- Ngobrol via telepon -->
+        <div class="card">
+            <img src="a5d010f6-bbb8-467c-bc94-805bf15e9dad.jpeg">
+            <div class="text-box">
+                <h3>Ngobrol via Telepon</h3>
+                <p>Rp 15.000 / Jam<br>
+                Cocok buat curhat, diskusi, atau sekadar ditemenin ngobrol santai.</p>
+            </div>
+        </div>
 
-  <h3>Komunitas</h3>
-  <p>Bergabunglah dengan komunitas-komunitas kami.</p>
-  <p><a href="#" style="color:#72ff72;text-decoration:none;">Jelajahi Komunitas →</a></p>
-</footer>
+        <!-- Temenin Belanja -->
+        <div class="card">
+            <img src="Shopping and buying fresh food.jpeg">
+            <div class="text-box">
+                <h3>Temenin Belanja</h3>
+                <p>Rp 20.000 / 2 Jam<br>
+                Temenin belanja kebutuhan harian atau sekadar jalan-jalan ke mall.</p>
+            </div>
+        </div>
+
+        <!-- Temenin Main -->
+        <div class="card">
+            <img src="Jeux de personnages d'anime esthétiques _ Image générée à base d’IA.jpeg">
+            <div class="text-box">
+                <h3>Temenin Main</h3>
+                <p>Rp 70.000 / 2 Jam<br>
+                Main game, hangout, nonton, atau kegiatan santai lainnya.</p>
+            </div>
+        </div>
+
+        <!-- Temenin Ngapain Aja -->
+        <div class="card">
+            <img src="Meet-up semi flat RGB color vector illustration_ Female friends walking together and chatting isolated cartoon characters on white background.jpeg">
+            <div class="text-box">
+                <h3>Temenin Ngapain Aja</h3>
+                <p>Rp 300.000 / Seharian<br>
+                Full day ditemenin aktivitas apapun sesuai kebutuhan (kecuali yang melanggar aturan).</p>
+            </div>
+        </div>
+
+    </div>
 
 </body>
 </html>
