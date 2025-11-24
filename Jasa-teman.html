@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jasa Teman</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #f1c40f;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: #000;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 900px;
+            margin: 30px auto;
+        }
+
+        .card {
+            background-color: #111;
+            border-left: 5px solid #f1c40f;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeUp 0.6s forwards;
+        }
+
+        .card:nth-child(2) { animation-delay: 0.15s; }
+        .card:nth-child(3) { animation-delay: 0.3s; }
+        .card:nth-child(4) { animation-delay: 0.45s; }
+
+        @keyframes fadeUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .card img {
+            width: 110px;
+            height: 110px;
+            object-fit: cover;
+            border-radius: 12px;
+            border: 2px solid #f1c40f;
+        }
+
+        .text-box h3 {
+            margin: 0;
+            font-size: 20px;
+            color: #f1c40f;
+        }
+
+        .text-box p {
+            margin-top: 5px;
+            font-size: 14px;
+            color: #eaeaea;
+        }
+
+        .btn-detail {
+            display: inline-block;
+            margin: 10px auto 0;
+            padding: 8px 14px;
+            background-color: #f1c40f;
+            color: #000;
+            border-radius: 8px;
+            font-weight: bold;
+            text-decoration: none;
+            width: fit-content;
+        }
+
+        .btn-detail:hover {
+            background-color: #ffda4d;
+        }
+    </style>
+</head>
+
+<body>
+
+    <a href="index.html" class="btn-detail">← Kembali</a>
+
+    <div class="header">JASA TEMAN - OPEN</div>
+
+    <div class="container">
+
+        <div class="card">
+            <img src="Telepon.jpeg">
+            <div class="text-box">
+                <h3>Ngobrol via Telepon</h3>
+                <p>Rp 15.000 / Jam<br>
+                Cocok buat curhat, diskusi, atau sekadar ditemenin ngobrol santai.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="Shopping.jpeg">
+            <div class="text-box">
+                <h3>Temenin Belanja</h3>
+                <p>Rp 20.000 / 2 Jam<br>
+                Temenin belanja kebutuhan harian atau sekadar jalan-jalan ke mall.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="Jeux.jpeg">
+            <div class="text-box">
+                <h3>Temenin Main</h3>
+                <p>Rp 70.000 / 2 Jam<br>
+                Main game, hangout, nonton, atau kegiatan santai lainnya.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="Meet.jpeg">
+            <div class="text-box">
+                <h3>Temenin Ngapain Aja</h3>
+                <p>Rp 300.000 / Seharian<br>
+                Full day ditemenin aktivitas apapun sesuai kebutuhan.</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
