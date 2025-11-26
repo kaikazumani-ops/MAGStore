@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produk Barang</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #f1c40f;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: #000;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 900px;
+            margin: 30px auto;
+        }
+
+        .card {
+            background-color: #111;
+            border-left: 5px solid #f1c40f;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeUp 0.6s forwards;
+        }
+
+        .card:nth-child(2) { animation-delay: 0.15s; }
+        .card:nth-child(3) { animation-delay: 0.3s; }
+        .card:nth-child(4) { animation-delay: 0.45s; }
+        .card:nth-child(5) { animation-delay: 0.6s; }
+
+        @keyframes fadeUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .card img {
+            width: 110px;
+            height: 110px;
+            object-fit: cover;
+            border-radius: 12px;
+            border: 2px solid #f1c40f;
+        }
+
+        .text-box h3 {
+            margin: 0;
+            font-size: 20px;
+            color: #f1c40f;
+        }
+
+        .text-box p {
+            margin-top: 5px;
+            font-size: 14px;
+            color: #eaeaea;
+        }
+
+        .btn-back {
+            display: inline-block;
+            margin: 15px;
+            padding: 8px 14px;
+            background-color: #f1c40f;
+            color: #000;
+            border-radius: 8px;
+            font-weight: bold;
+            text-decoration: none;
+            width: fit-content;
+        }
+
+        .btn-back:hover {
+            background-color: #ffda4d;
+        }
+    </style>
+</head>
+
+<body>
+
+    <a href="index.html" class="btn-back">← Kembali</a>
+
+    <div class="header">PRODUK BARANG</div>
+
+    <div class="container">
+
+        <!-- 1. ROG Strix G13CH -->
+        <div class="card">
+            <img src="ROG-G13CH.jpeg">
+            <div class="text-box">
+                <h3>ROG Strix G13CH</h3>
+                <p>
+                    <b>Harga:</b> Rp 17.000.000<br><br>
+                    Desktop ini menawarkan RAM DDR4 3200MHz hingga 64GB,  
+                    penyimpanan PCIe Gen4 NVMe hingga 2TB + HDD 1TB.
+                </p>
+            </div>
+        </div>
+
+        <!-- 2. ROG NUC -->
+        <div class="card">
+            <img src="Mini-PC.jpeg">
+            <div class="text-box">
+                <h3>ROG NUC</h3>
+                <p>
+                    <b>Harga:</b> Rp 80.000.000<br><br>
+                    Mini PC performa tinggi dengan prosesor Intel® Core™ Ultra 9 & 7  
+                    (45W dengan dynamic PL1 hingga 65W).
+                </p>
+            </div>
+        </div>
+
+        <!-- 3. ROG G22CH -->
+        <div class="card">
+            <img src="ROG-G22CH.jpeg">
+            <div class="text-box">
+                <h3>ROG G22CH</h3>
+                <p>
+                    <b>Harga:</b> Rp 50.000.000<br><br>
+                    Up to NVIDIA GeForce RTX™ 4070,  
+                    Windows 11 Pro,  
+                    Intel Core™ i9-14900KF,  
+                    1TB NVMe PCIe.
+                </p>
+            </div>
+        </div>
+
+        <!-- 4. Laptop Legion -->
+        <div class="card">
+            <img src="Laptop-Legion.jpeg">
+            <div class="text-box">
+                <h3>Laptop Legion</h3>
+                <p>
+                    <b>Harga:</b> Rp 40.000.000<br><br>
+                    Desain kokoh, agresif, dan sistem pendinginan sangat efisien.  
+                    Cocok untuk gamer hardcore.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
